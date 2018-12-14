@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="NewPersistenceUnit">
+        <class>schoolPortal.Model.Classroom</class>
+        <class>schoolPortal.Model.Comment</class>
+        <class>schoolPortal.Model.Grade</class>
+        <class>schoolPortal.Model.Lesson</class>
+        <class>schoolPortal.Model.Lessongroup</class>
+        <class>schoolPortal.Model.Parent</class>
+        <class>schoolPortal.Model.Student</class>
+        <class>schoolPortal.Model.Studentgroup</class>
+        <class>schoolPortal.Model.Teacher</class>
+        <class>schoolPortal.Model.Timetable</class>
+        <class>schoolPortal.Model.Tpasshistory</class>
+        <class>schoolPortal.Model.Tuser</class>
+        <properties>
+            <property name="toplink.jdbc.url" value="jdbc:mysql://localhost:3306/schooldb"/>
+            <property name="toplink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/schooldb"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:mysql://localhost:3306/schooldb"/>
+            <property name="openjpa.ConnectionDriverName" value="com.mysql.jdbc.Driver"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/schooldb"/>
+            <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+        </properties>
+    </persistence-unit>
+</persistence>
